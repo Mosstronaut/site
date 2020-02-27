@@ -25,26 +25,115 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
   </head>
 
   <body>
 
-    <!-- Sidenav -->
+    <!-- sideNav -->
     <div class="sideNav">
       <div class="navImg">
-        <img class="navLogo" src="img\xiphiasLetteredT.png" alt="Human-centered Design">
+        <img class="navLogo" src="img\xiphiasGlyphT.png" alt="Human-centered Design">
       </div>
       <div class="navLinks">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
+        <button class="tabLink" onclick="tabChange(home)" >Home</button>
+        <button class="tabLink" onclick="tabChange(services)" >Work</button>
+        <button class="tabLink" onclick="tabChange(projects)" >Sandbox</button>
+        <button class="tabLink" onclick="tabChange(contact)" >Contact</button>
       </div>
     </div>
+    <!-- End sideNav -->
+
+    <!-- mobileNav -->
+      <div class="mobileNav">
+        <div class="menuBar">
+          <div class="buttsLeft">
+            <button class="tabLinkMov" onclick="tabChangeMov(home)" >Home</button>
+            <button class="tabLinkMov" onclick="tabChangeMov(services)" >Work</button>
+          </div>
+          <div class="centerLogo">
+            <div class="navImgMini">
+              <img class="navLogoMini" src="img\xiphiasGlyphT.png" alt="Human-centered Design">
+            </div>
+          </div>
+          <div class="buttsRight">
+            <button class="tabLinkMov" onclick="tabChangeMov(projects)" >Sandbox</button>
+            <button class="tabLinkMov" onclick="tabChangeMov(contact)" >Contact</button>
+          </div>
+
+        </div>
+      </div>
+    <!-- End mobileNav -->
 
     <!-- mainBody -->
     <div class="main">
+      <div id="home" class="infoDiv">
+        <div class="infoContent">
+          <div class="title hometab">
+            <h4>Carlos Mosqueda</h4>
+            <h6>UI/UX Designer</h6>
+          </div>
+          <div class="profDiv">
+            <div class="profText hometab">
+              <h2>Hi!, I'm Carlos Mosqueda, and I design with people in mind.</h2>
+            </div>
+            <div class="profPic">
+              <img id="profile-picture" src="">
+            </div>
+          </div>
+          <div class="dnldLnk hometab">
+            <p class="smallLink">Download my CV</p>
+          </div>
+        </div>
+        <div class="serviceTab hometab">
+          <div class="tab">
+            <button id="defaultOpen" class="tablinks" onclick="changeTab(event, 'uiux')">UI/UX</button>
+            <button class="tablinks" onclick="changeTab(event, 'prodDes')">Product Design</button>
+            <button class="tablinks" onclick="changeTab(event, 'strBr')">Branding</button>
+          </div>
+          <div id="uiux" class="tabcontent">
+            <h4>I can help you in getting the best version of your product...</h4>
+            <ul class="tabUl">
+              <li>Craft a story for your product</li>
+              <li>Create an informative landing page that drives conversion</li>
+              <li>Refine an existing product or interface based on data insights</li>
+            </ul>
+          </div>
+          <div id="prodDes" class="tabcontent">
+            <h4>Give your product a boost from the get go...</h4>
+            <ul class="tabUl">
+              <li>Define the key propositions for your product</li>
+              <li>Establish a development roadmap by identifying the key features to work on first</li>
+              <li></li>
+            </ul>
+          </div>
+          <div id="strBr" class="tabcontent">
+            <h4>Content Title</h4>
+            <p>Text for this specific tab3</p>
+          </div>
+        </div>
+      </div>
+      <div id="services" class="infoDiv">
+        <div class="infoContent">
 
+        </div>
+      </div>
+      <div id="projects" class="infoDiv">
+        <div class="infoContent">
+
+        </div>
+      </div>
+      <div id="contact" class="infoDiv">
+        <div class="infoContent">
+
+        </div>
+      </div>
     </div>
+    <!-- End mainBody -->
+
+    <!-- tailCode -->
+    <script type="text/javascript">
+      openTab(home);
+      document.getElementById("defaultOpen").click();
+    </script>
   </body>
+</html>

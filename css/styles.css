@@ -1,9 +1,18 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
 /* sideNav Styles */
+.mobileNav{
+  display: none;
+}
+
 .sideNav {
   height: 100%;
-  width: 15%;
+  width: 180px;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   left: 0;
   background-color: #111;
@@ -11,27 +20,34 @@
   padding-top: 2%;
 }
 
-.sideNav a {
+.sideNav button {
   padding: 5% 3% 2% 6%;
   text-decoration: none;
   font-family: 'Orbitron', sans-serif;
   font-size: 25px;
+  background-color: #111;
+  border-color: transparent;
   color: #818181;
   display: block;
 }
 
-.sideNav a:hover {
+.sideNav button:hover {
+  color: #f1f1f1;
+}
+
+.sideNav button.active {
   color: #f1f1f1;
 }
 
 .navImg{
-  margin: 0;
   position: absolute;
-  left: 20%;
+  left: 25%;
   -ms-transform: translate(-20%, 0%);
   transform: translate(-20%, 0%);
-  height: 30%;
+  height: 20%;
   width: auto;
+  background-color: #ea5810;
+  transition: background-color 1s;
 }
 
 .navLogo{
@@ -41,7 +57,8 @@
 
 .navLinks{
   position: absolute;
-  margin-top: 100%;
+  margin-top: 110%;
+  left: 10%;
 }
 
 @media screen and (max-height: 450px) {
@@ -52,9 +69,228 @@
 
 /* main styles */
 .main {
-  margin-left: 15%; /* Same as the width of the sidenav */
+  /*margin-left: 18%; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  padding: 0px 0px;
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* End main styles */
+
+/* individual divs */
+.infoDiv{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#home{
+  width: 100%;
+  background-color: #111;
+  z-index: 2;
+}
+
+#services{
+  background-color: #455a64;
+  z-index: 4;
+}
+
+#projects{
+  background-color: #c1f1a5;
+  z-index: 6;
+}
+
+#contact{
+  background-color: #424242;
+  z-index: 8;
+}
+/*----------------------------Home--------------------------------*/
+/* Hero */
+.infoContent{
+  position: relative;
+  left: 13%;
+  top: 8%;
+  width: 90%;
+  height: 85%;
+}
+
+.hometab{
+  color: #fff;
+}
+
+.title{
+  margin-left: 90px;
+  padding-top: 20px;
+}
+
+.profDiv{
+  margin-top: 2%;
+  width: 100%;
+  display: inline-flex;
+}
+
+.profText{
+  margin-top: 10%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  padding-left: 2%;
+  width: 45%;
+}
+
+.dnldLnk{
+  position: relative;
+  font-size: 14px;
+  left: 20%;
+}
+
+.profPic{
+  float: right;
+  padding-left: 2%;
+  width: 45%;
+}
+
+#profile-picture{
+  width: 350px;
+  height: 350px;
+  opacity: 0.4;
+}
+/* End Hero */
+
+/* Services */
+.serviceTab{
+  position: relative;
+  left: 15%;
+  top: 280px;
+  width: 80%;
+  height: 85%;
+}
+
+.tab{
+  overflow: hidden;
+  border-radius: 6px 6px 0 0;
+  background-color: #111;
+}
+
+.tab button{
+  background-color: #bf360c;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover{
+  background-color: #e0e0e0;
+}
+
+.tab button.toggled{
+  background-color: #ea5810;
+}
+
+.tabcontent{
+  display: none;
+  height:250px;
+  font-size: 16px;
+  padding: 20px;
+  border: 3px solid #ea5810;
+}
+
+.tabUl{
+  margin-top: 2.5rem;
+}
+
+li{
+  margin: 8px 0;
+}
+
+/* End individual divs */
+
+/* Mobile divs */
+  @media screen and (max-width: 750px) {
+    .sideNav{
+      display: none;
+    }
+
+    /* Mobile Nav */
+      .mobileNav{
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        height: 70px;
+        width: 100vw;
+        display: block;
+      }
+
+      .menuBar{
+        background-color: #111;
+        display: inline-flex;
+        height: 100%;
+        width: 100%;
+      }
+
+      .menuBar button {
+        padding: 10% 10% 10% 5%;
+        text-decoration: none;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 16px;
+        background-color: #111;
+        border-color: transparent;
+        color: #818181;
+        display: block;
+      }
+
+      .buttsLeft{
+        position: relative;
+        display: inline-flex;
+        height:100%;
+        width:33%;
+        left: 1%;
+        bottom: 1%;
+      }
+
+      .centerLogo{
+        position: relative;
+        margin-left: 5%;
+        margin-right: 5%;
+        height:100%;
+        width:20%;
+      }
+
+      .navImgMini{
+        position: relative;
+        height: 100%;
+        width: auto;
+      }
+
+      .navLogoMini{
+        position: relative;
+        height: 100%;
+        left: 18%;
+        object-fit: contain;
+        background-color: #ea5810;
+      }
+
+      .buttsRight{
+        position: relative;
+        display: inline-flex;
+        height:100%;
+        width:33%;
+        right: 1%;
+        bottom: 1%;
+      }
+    /* End Mobile Nav */
+
+    /* Mobile Main */
+
+    /* Mobile Main */
+
+  }
+/* End Mobile divs */
