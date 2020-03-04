@@ -71,6 +71,7 @@
 .main {
   /*margin-left: 18%; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
+  font-family: 'Raleway', sans-serif;
   padding: 0px 0px;
   background-color: #000;
   height: 100vh;
@@ -88,6 +89,15 @@
   top: 0;
   overflow-x: hidden;
   transition: 0.5s;
+}
+
+.section-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.2;
+  filter: grayscale(100%);
 }
 
 #home{
@@ -145,8 +155,19 @@
 
 .dnldLnk{
   position: relative;
-  font-size: 14px;
-  left: 20%;
+  font-size: 16px;
+  font-weight: bold;
+  left: 8%;
+}
+
+.smallLink{
+  background-color: #ea5810;
+  height: 40px;
+  width: 160px;
+  margin: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
 }
 
 .profPic{
@@ -166,7 +187,7 @@
 .serviceTab{
   position: relative;
   left: 15%;
-  top: 280px;
+  top: 220px;
   width: 80%;
   height: 85%;
 }
@@ -174,7 +195,7 @@
 .tab{
   overflow: hidden;
   border-radius: 6px 6px 0 0;
-  background-color: #111;
+  background-color: transparent;
 }
 
 .tab button{
@@ -210,6 +231,78 @@
 li{
   margin: 8px 0;
 }
+/*----------------------------End Home--------------------------------*/
+
+/*----------------------------Work--------------------------------*/
+
+.worktab{
+  color: #fff;
+}
+
+.bgCard{
+  margin-top: 90px;
+  margin-left: 120px;
+  width: 75%;
+  height: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.cardTitle{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.cardContent{
+  font-size: 14px;
+  padding-left: 20px;
+  width: 95%;
+  display: inline-flex;
+}
+
+.cardText{
+  padding: 10px;
+  width: 55%;
+  height: 90%;
+}
+
+.cardImage{
+  position: relative;
+  left: 15%;
+  top:-35px;
+  padding: 5px;
+  width: 35%;
+  height: 90%;
+
+}
+
+.crdImg{
+  width: 150px;
+  height: 150px;
+}
+
+/*----------------------------End Work--------------------------------*/
+
+/*----------------------------Sandbox--------------------------------*/
+
+.sndtab{
+  color: #212121;
+}
+
+.intro{
+  width: 100%;
+  display: inline-flex;
+}
+
+.sandImg{
+  width: 250px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------------End Sandbox--------------------------------*/
 
 /* End individual divs */
 

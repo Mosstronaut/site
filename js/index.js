@@ -1,6 +1,6 @@
 //---------Main content div changer---------//
 
-//Set active div class and width
+//Set active div class and width-Change logo color by div
 function openTab(newTab){
   var newT = newTab.id
   console.log(newT);
@@ -14,19 +14,13 @@ function openTab(newTab){
       document.querySelector('.navImg').style.backgroundColor= "#c2e812";
     break;
     case 'projects':
-      document.querySelector('.navImg').style.backgroundColor= "#ef159f";
+      document.querySelector('.navImg').style.backgroundColor= "#ff6b88";
     break;
     case 'contact':
       document.querySelector('.navImg').style.backgroundColor= "#2eeae4";
     break;
     }
-  //navver(newTab.id);
 };
-
-//Change logo color by div
-//function navver(divSel){
-
-//};
 
 //Search for active div, set width to 0 and remove active class
 function tabChange(newTab){
