@@ -38,7 +38,7 @@
         <button class="tabLink" onclick="tabChange(home)" >Home</button>
         <button class="tabLink" onclick="tabChange(services)" >Work</button>
         <button class="tabLink" onclick="tabChange(projects)" >Sandbox</button>
-        <button class="tabLink" onclick="tabChange(contact)" >Contact</button>
+        <button class="tabLink" onclick="tabChange(contact)" >Links</button>
       </div>
     </div>
     <!-- End sideNav -->
@@ -57,7 +57,7 @@
           </div>
           <div class="buttsRight">
             <button class="tabLinkMov" onclick="tabChangeMov(projects)" >Sandbox</button>
-            <button class="tabLinkMov" onclick="tabChangeMov(contact)" >Contact</button>
+            <button class="tabLinkMov" onclick="tabChangeMov(contact)" >Links</button>
           </div>
 
         </div>
@@ -67,25 +67,25 @@
     <!-- mainBody -->
     <div class="main">
       <div id="home" class="infoDiv">
-        <div class="section-background sectHome">
-          <img src="img\bokeh.jpg" alt="">
+        <div class="sect-home">
+
         </div>
         <div class="infoContent">
           <div class="title hometab">
             <h4>Carlos Mosqueda</h4>
-            <h6>UI/UX Designer</h6>
+            <h6>Design Engineer</h6>
           </div>
           <div class="profDiv">
             <div class="profText hometab">
               <h2>Hi!, I'm Carlos Mosqueda, and I design with people in mind.</h2>
             </div>
             <div class="profPic">
-              <img id="profile-picture" src="">
+              <img id="profile-picture" src="img/profPict.jpg">
             </div>
           </div>
           <div class="dnldLnk hometab">
-            <button class="smallLink" name="button">Let's get in touch!</button>
-            <button class="smallLink" name="button">Download my CV</button>
+            <a href="https://blog.xiphias.tk" target="_blank"><button class="smallLink" name="button">Let's get in touch!</button></a>
+            <a href="dnlds/cvCAMG2020-.pdf" download="CVCAMG" target="_blank"><button class="smallLink" name="button">Download my CV</button></a>
           </div>
         </div>
         <div class="serviceTab hometab">
@@ -119,55 +119,73 @@
           </div>
         </div>
       </div>
-      <div id="services" class="infoDiv">
-        <div class="section-background">
-          <img src="img\cardboard.jpg" alt="">
+      <div id="services" class="infoDiv" style="overflow-y: hidden">
+        <div class="sect-serv">
+
         </div>
         <div class="infoContent">
           <div class="title worktab">
             <h4>Carlos Mosqueda</h4>
-            <h6>UI/UX Designer</h6>
+            <h6>Design Engineer</h6>
           </div>
           <div class="bgCard">
             <div class="cardTitle">
-              <h3>Driblet:</h3>
+              <h3>Working on it!</h3>
             </div>
             <div class="cardContent">
               <div class="cardText">
                 <p>
-                  Driblet was probably the project that made me use the
-                  most skills for a variety of tasks. From graphic design
-                  and animation to mechanical design and 3d printing,
-                  this project had it all.
+                  Choosing the best projects to showcase here, feel free to
+                  download my CV in the meantime!
                 </p>
+                <a href="dnlds/cvCAMG2020-.pdf" download="CVCAMG" target="_blank"><button class="smallLink" name="button" style="float: right">Download my CV</button></a>
               </div>
               <div class="cardImage">
-                <img class="crdImg" src="img\drib.png" alt="">
+                <img class="crdImg" src="img\workMat.png" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="projects" class="infoDiv">
-        <div class="section-background">
-          <img src="img\sakura.jpg" alt="">
+      <div id="projects" class="infoDiv" style="overflow-y: hidden">
+        <div class="sect-proj">
+
         </div>
         <div class="infoContent">
-          <div class="title sndtab">
-            <h4>Carlos Mosqueda</h4>
-            <h6>UI/UX Designer</h6>
+          <div class="sndInfo">
+            <div class="title sndtab">
+              <h4>Carlos Mosqueda</h4>
+              <h6>Design Engineer</h6>
+            </div>
+            <div class="sndtab">
+              <img class="sandImg" src="img\sand.png" alt="">
+            </div>
+            <div class="sndintro">
+              <h6 style="font-weight: bold">The sandbox is where I test whatever plugins and snippets I'm experimenting with...</h6>
+            </div>
+            <div class="sndcurr">
+              <h4 style="font-weight: bold">Currently working on:</h4>
+              <h5 class="wrk-on">Initial site and blog Set-up!</h5>
+            </div>
           </div>
-          <div class="intro sndtab">
-            <img class="sandImg" src="img\sand.png" alt="">
+          <div class="sndFeature">
+
           </div>
         </div>
       </div>
-      <div id="contact" class="infoDiv">
-        <div class="section-background">
-          <img src="img\speaker.jpg" alt="">
-        </div>
+      <div id="contact" class="infoDiv" style="overflow-y: hidden">
+        <div class="sect-cont"></div>
         <div class="infoContent">
-
+          <div class="lnkHead">
+            <h3 class="lnkTitle">Interesting Links</h3>
+          </div>
+          <div class="lnkSpace">
+            <div class="lnkCard">
+            </div>
+            <div class="lnks">
+              <h5 class="lnkURL"><a class="lnkList" href="https://blog.xiphias.tk">Check my blog out!</a></h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>

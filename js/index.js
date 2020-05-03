@@ -35,20 +35,36 @@ function tabChange(newTab){
 
 //Same as above but for mobile, sets height instead of width
 function openTabMov(newTab){
+  var newT = newTab.id;
   newTab.style.height = "100%";
+  newTab.style.width = "100%";
   newTab.classList.add("active");
+  switch(newT) {
+    case 'home':
+      document.querySelector('.navLogoMini').style.backgroundColor= "#ea5810";
+    break;
+    case 'services':
+      document.querySelector('.navLogoMini').style.backgroundColor= "#c2e812";
+    break;
+    case 'projects':
+      document.querySelector('.navLogoMini').style.backgroundColor= "#ff6b88";
+    break;
+    case 'contact':
+      document.querySelector('.navLogoMini').style.backgroundColor= "#2eeae4";
+    break;
+    }
 };
 
 function tabChangeMov(newTab){
   var acTab, tabs;
 
   acTab = document.querySelector('.active').id; //get active tab id
-  console.log("Mobile");
-
   document.getElementById(acTab).style.height = "0%";
 
   document.getElementById(acTab).classList.remove("active")//remove active class from tabs
+  console.log(newTab);
   openTabMov(newTab);
+  console.log(newTab);
 };
 //------------End main div selector----------------//
 
