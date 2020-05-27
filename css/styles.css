@@ -456,7 +456,7 @@ li{
 /* End individual divs */
 
 /* Mobile divs */
-  @media screen and (max-width: 420px) {
+  @media screen and (max-device-width: 480px) {
     .sideNav{
       display: none;
     }
