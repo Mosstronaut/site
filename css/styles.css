@@ -41,7 +41,6 @@
 
 .navImg{
   position: absolute;
-  left: 25%;
   transform: translate(-20%, 0%);
   height: 20%;
   width: auto;
@@ -57,7 +56,6 @@
 .navLinks{
   position: absolute;
   margin-top: 110%;
-  left: 10%;
 }
 
 @media screen and (max-height: 450px) {
@@ -476,7 +474,6 @@ li{
         display: inline-flex;
         align-items: center;
         height: 100%;
-        width: 100%;
       }
 
       .menuBar button {
@@ -490,24 +487,23 @@ li{
         display: block;
       }
 
-      .buttsLeft{
+      .buttsLeft, .buttsRight{
         display: inline-flex;
         height:100%;
-        width:33%;
         bottom: 1%;
-        margin-left: 2%;
-        margin-right: 2%;
       }
 
       .centerLogo{
+        position: relative;
+        left:-3.5%;
+        padding-left: 0;
+        padding-right: 0;
         height:95%;
-        width:95px;
       }
 
       .navImgMini{
-        position: relative;
         height: 100%;
-        width: auto;
+        width: 69px;
       }
 
       .navLogoMini{
@@ -517,14 +513,6 @@ li{
         background-color: #ea5810;
       }
 
-      .buttsRight{
-        display: inline-flex;
-        height:100%;
-        width:33%;
-        bottom: 1%;
-        margin-left: 2%;
-        margin-right: 2%;
-      }
     /* End Mobile Nav */
 
     /* Mobile Main */

@@ -30,11 +30,13 @@
   <body>
 
     <!-- sideNav -->
-    <div class="sideNav">
-      <div class="navImg">
-        <img class="navLogo" src="img\xiphiasGlyphT.png" alt="Human-centered Design">
+    <div class="sideNav container">
+      <div class="row">
+        <div class="navImg col-sm">
+          <img class="navLogo" src="img\xiphiasGlyphT.png" alt="Human-centered Design">
+        </div>
       </div>
-      <div class="navLinks">
+      <div class="navLinks col-sm">
         <button class="tabLink" onclick="tabChange(home)" >Home</button>
         <button class="tabLink" onclick="tabChange(services)" >Work</button>
         <button class="tabLink" onclick="tabChange(projects)" >Sandbox</button>
@@ -44,18 +46,18 @@
     <!-- End sideNav -->
 
     <!-- mobileNav -->
-      <div class="mobileNav">
-        <div class="menuBar">
-          <div class="buttsLeft">
+      <div class="mobileNav container">
+        <div class="menuBar row">
+          <div class="buttsLeft col-5">
             <button class="tabLinkMov" onclick="tabChangeMov(home)" >Home</button>
             <button class="tabLinkMov" onclick="tabChangeMov(services)" >Work</button>
           </div>
-          <div class="centerLogo">
+          <div class="centerLogo col-2">
             <div class="navImgMini">
               <img class="navLogoMini" src="img\xiphiasGlyphT.png" alt="Human-centered Design">
             </div>
           </div>
-          <div class="buttsRight">
+          <div class="buttsRight col-5">
             <button class="tabLinkMov" onclick="tabChangeMov(projects)" >Sandbox</button>
             <button class="tabLinkMov" onclick="tabChangeMov(contact)" >Links</button>
           </div>
@@ -65,7 +67,7 @@
     <!-- End mobileNav -->
 
     <!-- mainBody -->
-    <div class="main">
+    <div class="main container">
       <div id="home" class="infoDiv">
         <div class="sect-home">
 
